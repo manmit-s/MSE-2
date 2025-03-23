@@ -16,4 +16,29 @@ public class Employee {
         System.out.println("Name: " + name);
         System.out.println("Salary: " + salary);
     }
+    public static class RegularEmployee extends Employee{
+        public RegularEmployee(int employeeID, String name, double salary){
+            super(employeeID, name, salary);
+        }
+        public void displayDetails() {
+            System.out.println("Regular Employee Details:");
+            super.displayDetails(); // Parent ka displayDetails call
+            System.out.println("------------------------");
+        }
+    }
+    public static class ContractEmployee extends Employee {
+        private int contractDuration;
+
+        public ContractEmployee(int employeeID, String name, double salary, int contractDuration) {
+            super(employeeID, name, salary);
+            this.contractDuration = contractDuration;
+        }
+
+        public void displayDetails() {
+            System.out.println("Contract Employee Details");
+            super.displayDetails();
+            System.out.println("------------------------");
+        }
+    }
+
 }
