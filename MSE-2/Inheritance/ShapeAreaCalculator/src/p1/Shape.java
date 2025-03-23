@@ -9,7 +9,6 @@ public abstract class Shape {
             this.radius = radius;
         }
 
-        @Override
         public double calculateArea() {
             return Math.PI*Math.pow(radius, 2.0);
         }
@@ -21,7 +20,6 @@ public abstract class Shape {
             this.breadth = breadth;
         }
 
-        @Override
         public double calculateArea() {
             return length*breadth;
         }
@@ -32,7 +30,7 @@ public abstract class Shape {
             this.base = base;
             this.height = height;
         }
-        @Override
+        
         public double calculateArea() {
             return 0.5*base*height;
         }
