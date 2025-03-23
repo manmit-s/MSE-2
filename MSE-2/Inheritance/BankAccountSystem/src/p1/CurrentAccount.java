@@ -5,7 +5,7 @@ public class CurrentAccount extends BankAccount{
         super(accountNumber, accountHolderName, balance);
     }
 
-    @Override
+    //Overriding parent class method without @Override annotation
     public double calculateInterest() {
         return 0.02*balance;
     }
