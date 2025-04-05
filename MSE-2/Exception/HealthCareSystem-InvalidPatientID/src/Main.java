@@ -36,6 +36,8 @@ public class Main {
 
         PatientRecords pr = new PatientRecords(patientId);
 
+        System.out.println("Hello There");
+
         try{
             pr.accessRecord();
         }
